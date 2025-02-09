@@ -1,0 +1,8 @@
+name: agentBehaviorConvergence
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy
+  - matplotlib
+  - jupyterlab    # 如果需要在 notebook 中运行，可选
