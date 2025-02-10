@@ -1,20 +1,12 @@
-# My Thoughts and Questions on Agent Decision-Making
-
-## Thoughts
-
-1. **Influence of Agent Historical State on Decisions**  
-   ![Origin Inspiration](origin_example.png)  
-   How does accumulated past experience or recorded interactions affect the choices made by the agent?
-
-2. **Decisions Should Be Related to the Environment or Rewards**  
-   ![Reward Inspiration](reward_example.png)  
-   How can we effectively integrate these external factors into the agent's learning and decision process?
-
-3. **Scalability Issues with Many Agents**  
-   As the number of agents increases, there is a concern that the current rules for environment or reward may become less effective, potentially leading to very slow convergence of the system. What strategies can be used to address or mitigate these scalability issues?
-
-## Questions
-
-- **Where Does the Player's Attention Lie?**  
-  - Is the player's attention primarily drawn to the reward outcomes, the interactions among agents, or the agent’s own internal state?  
-  - Could the decision-making process be influenced by the network structure of the players? For example, does the connectivity or social network of the players affect how they perceive rewards or interactions, and thereby influence their decisions?
+| Agent Size | History (Avg Rounds) | History w/o Signal (Avg Rounds) | Reward (Avg Rounds) | Reward w/o Signal (Avg Rounds) |
+|------------|----------------------|---------------------------------|---------------------|--------------------------------|
+| 2          | 13.0                 | 26.0                            | 10.5                | 19.5                           |
+| 4          | 44.0                 | 141.0                           | 27.5                | 46.5                           |
+| 6          | 212.5                | 1160.0                          | 74.5                | 127.5                          |
+| 8          | 780.5                | 3186.0                          | 171.0               | 212.0                          |
+| 10         | 1969.5               | 14494.5                         | 208.0               | 284.0                          |
+| 16         | 31156.5              | 98071.0                         | 811.0               | 455.0                          |
+| 20         | 79753.5              | -                               | 1403.0              | 875.5                          |
+| 50         | -                    | -                               | 9708.0              | 2421.0                         |
+| 100        | -                    | -                               | 37628.0             | 5740.0                         |
+| 200        | -                    | -                               | 96777.0             | 13777.5                        |
